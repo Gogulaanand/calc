@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
+*{
+	font-family: 'Montserrat', 'Open Sans', sans-serif;
+}
+body{
+	display: flex;
+	justify-content: center;
+}
+button{
+	border: none;
+	text-decoration: none;
+	background: #f0f0f0;
+	padding: 1.25rem 1.9rem;
+	line-height: 1.2;
+	margin: auto auto;
+	color: black;
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 22px;
+}
+#calc{
+	width: 350px;
+	height: 500px;
+	border: 2px solid #000;
+	border-radius: 10px;
+}
+#appName{
+	height: 60px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #000;
+}
+#calcLogo{
+	width: 30px;
+	height: 30px;
+	padding-right: 10px;
+}
+#appName h1{
+	font-size: 22px;
+}
+#display{
+	height: 80px;
+}
+#keys{
+	background-color:#f0f0f0;
+	opacity: 0.6;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: repeat(5,1fr);
+	grid-template-areas: "clean negate modulo divide"
+						 "seven eight nine product"
+						 "four five six minus"
+						 "one two three plus"
+						 "zero zero deci equals";
+	grid-gap: 0;
+}
+
+.clean{
+	grid-area: clean;
+}
+.negate{
+	grid-area: negate;
+}
+.modulo{
+	grid-area: modulo;
+}
+.divide{
+	grid-area: divide;
+}
+
+.seven{
+	grid-area: seven;
+}
+.eight{
+	grid-area: eight;
+}
+.nine{
+	grid-area: nine;
+}
+.product{
+	grid-area: product;
+}
+
+.four{
+	grid-area: four;
+}
+.five{
+	grid-area: five;
+}
+.six{
+	grid-area: six;
+}
+.minus{
+	grid-area: minus;
+}
+
+.one{
+	grid-area: one;
+}
+.two{
+	grid-area: two;
+}
+.three{
+	grid-area: three;
+}
+.plus{
+	grid-area: plus;
+}
+
+.zero{
+	grid-area: zero;
+}
+.deci{
+	grid-area: deci;
+}
+.equals{
+	grid-area: equals;
+}
