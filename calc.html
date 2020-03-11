@@ -3,39 +3,38 @@
 		<section id="appName">
 			<img src="https://images-na.ssl-images-amazon.com/images/I/51xa4WtV1wL.png" alt="calculator logo" id="calcLogo">
 			<h1>CALCULATOR</h1>
-			</section>
+		</section>
 		<section id="display">
-			<h1 id="numbers_row1"></h1>
-			<h1 id="numbers_row2"></h1>
-			</section>
+			<h1 id="numbers_row"></h1>
+		</section>
 		<div id="keys">
 			
 				<button class="clean" onclick="clear_scr()">C</button>
-				<button class="negate">+/-</button>
-				<button class="modulo">%</button>
-				<button class="divide">/</button>
+				<button class="negate" onclick="negate()">+/-</button>
+				<button class="modulo" onclick="operator('%')">%</button>
+				<button class="divide" onclick="operator('/')">/</button>
 
 			
 				<button class="nine" onclick="add_to_display(9)">9</button>
 				<button class="eight" onclick="add_to_display(8)">8</button>
 				<button class="seven" onclick="add_to_display(7)">7</button>
-				<button class="product">*</button>
+				<button class="product"onclick="operator('*')">*</button>
 
 
 				<button class="four" onclick="add_to_display(4)">4</button>
 				<button class="five" onclick="add_to_display(5)">5</button>
 				<button class="six" onclick="add_to_display(6)">6</button>
-				<button class="minus">-</button>
+				<button class="minus"onclick="operator('-')">-</button>
 
 
 				<button class="one" onclick="add_to_display(1)">1</button>
 				<button class="two" onclick="add_to_display(2)">2</button>
 				<button class="three" onclick="add_to_display(3)">3</button>
-				<button class="plus">+</button>
+				<button class="plus" onclick="operator('+')">+</button>
 	
 				<button class="zero" onclick="add_to_display(0)">0</button>
 				<button class="deci" onclick="add_to_display('.')">.</button>
-				<button class="equals">=</button>
-			</div>
+				<button class="equals" onclick="eval()">=</button>
+		</div>
 	</div>
-	</body>
+</body>
